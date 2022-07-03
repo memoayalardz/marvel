@@ -1,0 +1,16 @@
+.img-thumbnail {
+    width: 100%;
+    height: 30em;
+}
+@media only screen and (max-width: 992px) {
+    .img-thumbnail {
+        width: 100%;
+        height: 18em;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .img-thumbnail {
+        width: 100%;
+        height: 40em;
+    }
+}
