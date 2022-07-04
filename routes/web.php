@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CharactersController;
+use App\Http\Controllers\ColaboratorsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/marvel/colaborators/{name?}', [ColaboratorsController::class,'show']);
+Route::get('/marvel/characters/{name?}', [CharactersController::class,'show']); 

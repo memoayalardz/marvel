@@ -15,11 +15,6 @@ use App\Http\Controllers\ColaboratorsController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/colaborators', [ColaboratorsController::class,'index']);
-Route::get('/colaborators/{name?}', [ColaboratorsController::class,'show']);
 
-Route::get('/characters', [CharactersController::class,'index']);
-Route::get('/characters/{name?}', [CharactersController::class,'getData']);
-/* Route::resource('/characters', CharactersController::class); */
 
 
