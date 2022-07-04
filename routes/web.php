@@ -15,7 +15,7 @@ use App\Http\Controllers\ColaboratorsController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/marvel', function () {
     return view('welcome');
 });
 Route::get('/marvel/colaborators/{name?}', [ColaboratorsController::class,'show']);
